@@ -1,0 +1,182 @@
+body {
+  display: flex;
+  min-height: 8vh;
+  flex-direction: column;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+.main {
+  flex: 1;
+}
+
+h3, th {
+  font-family: roboto;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2, h4, p {
+  font-family: helvetica;
+  margin: 10px;
+  padding: 10px;
+}
+
+aside {
+  grid-area: aside;
+  align-self: stretch;
+  margin: 10px;
+  padding: 10px;
+}
+
+.laburos__uno{
+  border: 1px #fff;
+  font-family: roboto;
+  font-style: regular;
+}
+
+.efectito{
+    background-color: #F7E1EE;
+    margin: 100px;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    transform: skew(20deg);
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: shake 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: skewY(20deg);
+  }
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+
+#menu ul li{
+    font-family: roboto;
+    font-size: 16px;
+    list-style-type: none;
+    float: right;
+    text-align: left;
+    padding: 14px 16px;
+}
+
+li{
+  transition: background-color 0.5s ease;
+  background-color: #F683A4;
+}
+
+li:hover {
+  background-color: white;
+}
+
+.contenedor {
+  background: #FFF4F2;
+  border: 1px solid red;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  position: block;
+}
+
+.contenedor .principal {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #FFF4F2 to, white);
+}
+
+.contenedor .principal2 {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.principal {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #F7E1EE, white);
+}
+
+.principal2 {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+header {
+  grid-area: header;
+  align-self: stretch;
+}
+
+header section#section {
+  grid-area: section;
+}
+
+header nav {
+  grid-area: nav;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 120px 120px 120px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 10px;
+  padding: 10px;
+  align-self: stretch;
+}
+
+.grid2 .grid3 {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 150px 150px 150px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 10px;
+  padding: 10px;
+  align-self: stretch;
+}
+
+.grid2 .grid4 {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 700px 700px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin: 10px;
+  padding: 10px;
+  align-self: stretch;
+}
+
+.grid2 .grid5 {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 350px 350px;
+  grid-column-gap: 500px;
+  grid-row-gap: 200px;
+  margin: 10px;
+  padding: 10px;
+  align-self: stretch;
+}
+
+.footercito {
+  font-size: 9px;
+}

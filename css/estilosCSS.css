@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/* generales */
+html{
+	font-size: 60%;
+}
+
+* {
+	margin: 1;
+	padding: 1;
+}
+
+body {
+	font-family: roboto;
+}
+
+/* header */
+.titulos{
+	font-family: roboto bold;
+}
+
+/* grilla */
+#grilla{
+	display: grid;
+	grid-template-areas: 
+		"header nav nav"
+		"section2 section aside"	
+		"article article aside"
+		"footer footer footer";
+	grid-template-rows: 80px 80px;
+	grid-template-columns: 450px 450px 400px;
+	grid-column-gap: 20px;
+	grid-column-gap: 20px;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(to bottom, #F7E1EE, white);
+}
+
+#section{
+	height: 100vh;
+	margin: 20px;
+	grid-template-rows: 100px 100px;
+	grid-template-columns: 50px 50px;
+	justify-content: stretch;
+	align-items: start;
+}
+
+#section2{
+	height: 100vh;
+	margin: 20px;
+	grid-template-rows: 100px 100px;
+	grid-template-columns: 50px 50px;
+	justify-content: stretch;
+	align-items: start;
+}
+
+section#section{
+	grid-area: section2;
+}
+
+#mycontainer {
+    max-width: 1280px !important;
+}
+
+section#section{
+	grid-area: section;
+}
+
+nav{
+	grid-area: nav;
+}
+
+aside{
+	grid-area: aside;
+	align-self: stretch;
+}
+
+/* bloques bem */
+
+.ig{
+	margin: 10px;
+	padding: 10px;
+}
+
+.ig__uno{
+	font-kerning: 10px;
+}
+
+.ig__dos{
+	color: red;
+}
+
+.ig--tres{
+	font-style: bold;
+}
+
+.ig__cuatro{
+	width: 118px;
+	height: 118px;
+}
+
+.ig__cinco{
+	font-style: italic;
+}
+
+.ig__seis{
+	color: black;
+}
+
+.ig__siete{
+	color: orange;
+}
+
+/* media */
+
+/* bloque1 */
+.carousell{
+	color: red;
+}
+
+/* bloque2 */
+
+.carousell__fotos{
+	background-color: #F7E1EE;
+}
+		@media (max-width: 768px) {
+			.carousell__fotos {
+				background-color: red;
+		}
+
+		/* bloque 3 */
+			.carousell__linea{
+				color: white;
+			}
+
+/* bloque 4 */
+.laburos{
+	margin: 1px;
+	padding: 1px;
+}
+
+/* bloque 5 */
+.laburos__uno{
+	color: black;
+}
+
+/* bloque 6 */
+.laburos__dos{
+	font-style: bold;
+}
+
+/* bloque 7 */
+.laburos--tres{
+	background-color: red;
+}
+
+li:hover {
+	background-color: #F7E1EE;
+}
+
+.fondiito{
+	background-color: #F7E1EE;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #F7E1EE;}
+
+	a {
+  		float: left;
+  		display: block;
+  		color: #F7E1EE;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none; 
+  	}
+
+		@media screen and (max-width: 600px) {
+			.topnav a {
+    			float: none;
+    			width: 100%;
+    	}
+  }
+
+.efectito{
+	display: inline-block;
+  	background-color: #F7E1EE;
+ 	height: 230px;
+  	width: 230px;
+  	transform: skew(20deg);
+  	font-size: 18px;
+  	padding: 1px;
+  	color: white;
+  	margin-right: 5px;
+  	margin-left: 5px;
+  	animation: shake 2s infinite;
+  	animation-direction: alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: skewY(20deg);
+  }
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+
+#menu ul li{
+	font-family: roboto;
+	font-size: 16px;
+    list-style-type: none;
+    float: right;
+    text-align: left;
+    padding: 14px 16px;
+}
+
+.carousel-inner{
+	background-color: #F7E1EE;
+}
+
+.animate__bounceInLeft .titulos{
+	font-family: roboto;
+	color: red;
+	left: 1%;
+	display: inline-flex;
+}
+
+/* generales */
+
+.subtitulo{
+	font-weight: bold;
+	background-color: #FFF4F2;
+	letter-spacing: 1px;
+}
+
+.principal{
+    display: flex;
+	flex: 1;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	background: linear-gradient(to bottom, #F7E1EE, white);
+}
+
+.principal2{
+    display: flex;
+	flex: 1;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.contenedor{
+    background: #FFF0F5;
+    border: 1px solid red;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    position: block;
+}
+
+.sobremi{
+	margin: 10px;
+	padding: 10px;
+}
+
+.parrafoDestacado1{
+	font-size: 16px;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	background-image: url(https://i.postimg.cc/KjFB3g3Y/fondotexto.jpg)
+}
+
+.fondoServicios{
+	background-image: url(https://i.postimg.cc/m2qgztD4/maqui.jpg);
+	background-size: 870px;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: roboto;
+	color: red;
+	font-size: 16px;
+}
+
+h2 {
+	font-family: roboto;
+	color: red;
+}
+
+h3, h4, a {
+	font-family: roboto;
+	color: black;
+}
+
+hr {
+	color: #F7E1EE;
+}
+
+p {
+	font-family: roboto;
+	font-size: 13px;
+}
+
+table {
+  	border: 2px solid;
+  	background-color: #FFF4F2;
+ }
+
+th {
+	font-family: helvetica;
+	color: red;
+}
+
+td {
+	font-family: roboto;
+}
+
+ol {
+	list-style-image: url("https://i.postimg.cc/J75KRRSq/item.jpg")
+}
+
+ul {
+	list-style-position: outside;
+}
+
+body {
+  display: flex;
+  min-height: 8vh;
+  flex-direction: column;
+}
+
+/* footer */
+.footercito {
+   font-size: 9px;
+}
+
+.fondoForm{
+	background-image: url(https://i.postimg.cc/JzcXhHd3/fondoform2.jpg)
+}

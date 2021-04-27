@@ -1,0 +1,75 @@
+$fontuno: roboto;
+$fontdos: helvetica;
+$color: #FFF4F2;
+$borde: 1px solid red;
+$width: 300px;
+$height: 300px;
+$margin: 20px;
+
+body{
+  	display: flex;
+ 	min-height: 8vh;
+  	flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+h4{
+	font-family: $fontuno;
+	p{
+		font-family: $fontdos;
+	}
+}
+
+h2{
+	font-family: $fontuno bold;
+}
+
+aside{
+	grid-area: aside;
+	align-self: stretch;
+	margin: 10px;
+	padding: 10px;
+}
+
+.contenedor{
+    background: $color;
+    border: $borde;
+    margin: 20px;
+    padding: 20px;
+    width: $width;
+    height: $height;
+    position: block;
+
+		.encabezados{
+			font-family: $fontdos;
+		}
+
+				.subtitulo{
+					font-weight: bold;
+					background-color: $color;
+					letter-spacing: 1px;
+				}
+
+					.principal{
+    					display: flex;
+						flex: 1;
+						margin-top: $margin;
+						flex-wrap: wrap;
+						background: linear-gradient(to bottom, $color to, white);
+					}
+
+							.principal2{
+    							display: flex;
+								flex: 1;
+								margin-top: $margin;
+								flex-wrap: wrap;
+							}
+}
+
+
+
+
+
